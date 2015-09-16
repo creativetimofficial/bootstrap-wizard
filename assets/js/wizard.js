@@ -4,14 +4,14 @@ transparent = true;
 $(document).ready(function(){
     /*  Activate the tooltips      */
     $('[rel="tooltip"]').tooltip();
-    
-        
-    $('#wizard').bootstrapWizard({
+      
+    $('.wizard-card').bootstrapWizard({
         'tabClass': 'nav nav-pills',
         'nextSelector': '.btn-next',
         'previousSelector': '.btn-previous',
-         onInit : function(tab, navigation,index){
          
+         onInit : function(tab, navigation, index){
+            
            //check number of tabs and fill the entire row
            var $total = navigation.find('li').length;
            $width = 100/$total;
@@ -21,9 +21,21 @@ $(document).ready(function(){
            if($display_width < 400 && $total > 3){
                $width = 50;
            }
+           
            navigation.find('li').css('width',$width + '%');
+           
         },
-         onTabClick : function(tab, navigation, index){
+        onNext: function(tab, navigation, index){
+            if(index == 1){
+                return validateFirstStep();
+            } else if(index == 2){
+                return validateSecondStep();
+            } else if(index == 3){
+                return validateThirdStep();
+            } //etc. 
+              
+        },
+        onTabClick : function(tab, navigation, index){
             // Disable the posibility to click on tabs
             return false;
         }, 
@@ -49,8 +61,7 @@ $(document).ready(function(){
         readURL(this);
     });
     
-    
-    $('[data-toggle="wizard-radio"]').click(function(event){
+    $('[data-toggle="wizard-radio"]').click(function(){
         wizard = $(this).closest('.wizard-card');
         wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
         $(this).addClass('active');
@@ -58,14 +69,73 @@ $(document).ready(function(){
         $(this).find('[type="radio"]').attr('checked','true');
     });
     
+    $('[data-toggle="wizard-checkbox"]').click(function(){
+        if( $(this).hasClass('active')){
+            $(this).removeClass('active');
+            $(this).find('[type="checkbox"]').removeAttr('checked');
+        } else {
+            $(this).addClass('active');
+            $(this).find('[type="checkbox"]').attr('checked','true');
+        }
+    });
+    
     $height = $(document).height();
     $('.set-full-height').css('height',$height);
-    
-    //functions for demo purpose
     
     
 });
 
+function validateFirstStep(){
+    
+    $(".wizard-card form").validate({
+		rules: {
+			firstname: "required",
+			lastname: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			firstname: "Please enter your First Name",
+			lastname: "Please enter your Last Name",
+			email: "Please enter a valid email address",
+		}
+	}); 
+	
+	if(!$(".wizard-card form").valid()){
+    	console.log('invalid');
+    	return false;
+	}
+	
+	return true;
+}
+
+function validateSecondStep(){
+   
+    //code here for second step
+    $(".wizard-card form").validate({
+		rules: {
+			
+		},
+		messages: {
+			
+		}
+	}); 
+	
+	if(!$(".wizard-card form").valid()){
+    	console.log('invalid');
+    	return false;
+	}
+	return true;
+    
+}
+
+function validateThirdStep(){
+    //code here for third step
+    
+    
+}
 
  //Function to show image before upload
 
