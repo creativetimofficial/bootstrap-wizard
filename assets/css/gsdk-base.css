@@ -345,8 +345,9 @@ h1 .subtitle{
 }
 .has-success .form-control, 
 .has-success .form-control-feedback,
-.form-control.valid{
+.form-control.valid:focus{
     border-color: #05AE0E;
+    color: #05AE0E;
 }
 .has-error .form-control, 
 .has-error .form-control-feedback,
@@ -502,7 +503,9 @@ label small{
     color: #FF3B30;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
     background-color: #2CA8FF;
     color: #FFFFFF;
 }
@@ -747,6 +750,9 @@ label{
 .wizard-card .picture:hover{
     border-color: #2ca8ff;
 }
+.wizard-card.ct-wizard-azzure .picture:hover{
+    border-color: #2CA8FF;
+}
 .wizard-card.ct-wizard-green .picture:hover{
     border-color: #05ae0e;
 }
@@ -804,6 +810,9 @@ label{
 .wizard-card.ct-wizard-green .nav-pills > li.active a{
     background-color: #05ae0e;
 }
+.wizard-card.ct-wizard-azzure .nav-pills > li.active a{
+    background-color: #2CA8FF;
+}
 .wizard-card.ct-wizard-blue .nav-pills > li.active a{
     background-color: #3472f7;
 }
@@ -858,6 +867,10 @@ label{
 
 .wizard-card .choice:hover .icon, .wizard-card .choice.active .icon{
     border-color: #2ca8ff;
+}
+
+.wizard-card.ct-wizard-azzure .choice:hover .icon, .wizard-card.ct-wizard-azzure .choice.active .icon{
+    border-color: #2CA8FF;
 }
 .wizard-card.ct-wizard-blue .choice:hover .icon, .wizard-card.ct-wizard-blue .choice.active .icon{
     border-color: #3472f7;

@@ -18,8 +18,6 @@ $(document).ready(function(){
            
            $display_width = $(document).width();
            
-           console.log($total);
-           
            if($display_width < 600 && $total > 3){
                $width = 50;
            }
