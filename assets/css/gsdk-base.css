@@ -34,7 +34,8 @@ input[type="button"]:focus {
 }
 
 .btn:focus,
-.btn:hover{
+.btn:hover,
+.btn:active{
     outline: 0;
 }
 
@@ -345,7 +346,6 @@ h1 .subtitle{
 .has-success .form-control, 
 .has-success .form-control-feedback,
 .form-control.valid{
-    color: #05AE0E;
     border-color: #05AE0E;
 }
 .has-error .form-control, 

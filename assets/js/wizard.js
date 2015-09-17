@@ -18,7 +18,9 @@ $(document).ready(function(){
            
            $display_width = $(document).width();
            
-           if($display_width < 400 && $total > 3){
+           console.log($total);
+           
+           if($display_width < 600 && $total > 3){
                $width = 50;
            }
            
@@ -95,16 +97,59 @@ function validateFirstStep(){
 				required: true,
 				email: true
 			}
+			
+/*  other possible input validations
+			,username: {
+				required: true,
+				minlength: 2
+			},
+			password: {
+				required: true,
+				minlength: 5
+			},
+			confirm_password: {
+				required: true,
+				minlength: 5,
+				equalTo: "#password"
+			},
+		
+			topic: {
+				required: "#newsletter:checked",
+				minlength: 2
+			},
+			agree: "required"
+*/			
+
 		},
 		messages: {
 			firstname: "Please enter your First Name",
 			lastname: "Please enter your Last Name",
 			email: "Please enter a valid email address",
+
+/*   other posible validation messages
+			username: {
+				required: "Please enter a username",
+				minlength: "Your username must consist of at least 2 characters"
+			},
+			password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			confirm_password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+			email: "Please enter a valid email address",
+			agree: "Please accept our policy",
+			topic: "Please select at least 2 topics"
+*/
+				
 		}
 	}); 
 	
 	if(!$(".wizard-card form").valid()){
-    	console.log('invalid');
+    	//form is invalid
     	return false;
 	}
 	
