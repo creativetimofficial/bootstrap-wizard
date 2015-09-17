@@ -17,13 +17,19 @@ To make the integration easier we also made a tutorial with code snippets. Once 
 
 Examples
 If you want to start with a pre-built template, you can see the following examples made with the Bootstrap Wizard:
+
 [Register User Flow](http://demos.creative-tim.com/wizard-demo-register)
+
 [List Your Boat](http://demos.creative-tim.com/wizard-demo-list-boat)
+
 [List Your Place](http://demos.creative-tim.com/wizard-demo-list-place)
 
 Change Log 
+
 v1.0 08 Aug '14 [initial release]
+
 v1.1 17 Sep '15 [current version]
+
 * Added checkboxes with big icon design (same as the radio)
 * Update to Bootstrap 3.3.5
 * Update to Font Awesome 4.4.0
