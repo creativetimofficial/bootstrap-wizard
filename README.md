@@ -39,6 +39,7 @@ Quick start options:
 
 Within the download you'll find the following directories and files:
 
+```
 ├── assets
 │   ├── css
 │   │   ├── bootstrap.min.css
@@ -54,6 +55,8 @@ Within the download you'll find the following directories and files:
 ├── index.html
 ├── wizard-list-boat.html
 └── wizard-list-place.html
+
+```
 
 ### Version Log 
 
