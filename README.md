@@ -43,15 +43,19 @@ Within the download you'll find the following directories and files:
 ├── assets
 │   ├── css
 │   │   ├── bootstrap.min.css
-│   │   └── gsdk-base.css
+│   │   ├── demo.css
+│   │   └── gsdk-bootstrap-wizard.css
 │   ├── img
-│   └── js
-│       ├── bootstrap.min.js
-│       ├── jquery-1.10.2.js
-│       ├── jquery.bootstrap.wizard.js
-│       ├── jquery.validate.min.js
-│       └── wizard.js
-├── documentation
+│   ├── js
+│   │   ├── bootstrap.min.js
+│   │   ├── gsdk-bootstrap-wizard.js
+│   │   ├── jquery-1.10.2.js
+│   │   ├── jquery-2.2.4.min.js
+│   │   ├── jquery.bootstrap.wizard.js
+│   │   └── jquery.validate.min.js
+│   └── scss
+│       ├── gsdk-bootstrap-wizard
+│       └── gsdk-bootstrap-wizard.scss
 ├── index.html
 ├── wizard-list-boat.html
 └── wizard-list-place.html
