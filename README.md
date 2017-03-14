@@ -1,8 +1,6 @@
-# bootstrap-wizard
-Free Bootstrap Wizard
+# [Free Bootstrap Wizard](http://demos.creative-tim.com/wizard-demo-register)
 
-Download from: [Creative Tim](http://www.creative-tim.com/product/bootstrap-wizard)
-Live Preview: [Live Preview](http://demos.creative-tim.com/wizard-demo-register)
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/22/original/opt_wizard_thumbnail.jpg "Free Bootstrap Wizard")
 
 Fully responsive wizard that comes with 3 useful examples and 5 bright colors. The Bootstrap Wizard is one of the most handy elements that can be used inside a project. We highly recommend it not just as a design feature, but as a way of guiding your users through tough forms.
 
@@ -24,16 +22,79 @@ If you want to start with a pre-built template, you can see the following exampl
 
 [List Your Place](http://demos.creative-tim.com/wizard-demo-list-place)
 
-Change Log 
+## Links
+Download from: [Creative Tim](http://www.creative-tim.com/product/bootstrap-wizard)
+Live Preview: [Live Preview](http://demos.creative-tim.com/wizard-demo-register)
 
-v1.0 08 Aug '14 [initial release]
+## Quick start
 
-v1.1 17 Sep '15 [current version]
+Quick start options:
 
-* Added checkboxes with big icon design (same as the radio)
-* Update to Bootstrap 3.3.5
-* Update to Font Awesome 4.4.0
-* Added validation on fields with [jquery.validation.js](http://jqueryvalidation.org/documentation/)
-* Fix bug when adding Bootstrap Datepicker
-* Fix bug for nav steps width on small screens(< 600px)
-* Change in file structure
+- [Download from Github](https://github.com/creativetimofficial/bootstrap-wizard.git).
+- [Download from Creative Tim](http://www.creative-tim.com/product/bootstrap-wizard).
+- Clone the repo: `git clone https://github.com/creativetimofficial/bootstrap-wizard.git`.
+
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
+├── assets
+│   ├── css
+│   │   ├── bootstrap.min.css
+│   │   └── gsdk-base.css
+│   ├── img
+│   └── js
+│       ├── bootstrap.min.js
+│       ├── jquery-1.10.2.js
+│       ├── jquery.bootstrap.wizard.js
+│       ├── jquery.validate.min.js
+│       └── wizard.js
+├── documentation
+├── index.html
+├── wizard-list-boat.html
+└── wizard-list-place.html
+
+### Version Log 
+
+V1.0 08 Aug '14 [initial release]
+
+V1.1 17 Sep '15
+- Added checkboxes with big icon design (same as the radio)
+- Update to Bootstrap 3.3.5
+- Update to Font Awesome 4.4.0
+- Added validation on fields with [jquery.validation.js](http://jqueryvalidation.org/documentation/)
+- Fix bug when adding Bootstrap Datepicker
+- Fix bug for nav steps width on small screens(< 600px)
+- Change in file structure 
+
+V1.1.1 Mar '17 [current version]
+- switched to MIT License
+
+### License
+
+- Copyright 2017 Creative Tim (http://www.creative-tim.com)
+- Licensed under MIT (https://github.com/creativetimofficial/bootstrap-wizard/blob/master/LICENSE.md)
+
+
+## Useful Links
+
+More products from Creative Tim: <http://www.creative-tim.com/products>
+
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
+
+Freebies: <http://www.creative-tim.com/products>
+
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
+
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
