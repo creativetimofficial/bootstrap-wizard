@@ -2,29 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Get Shit Done Bootstrap Wizard by Creative Tim</title>
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+
+	<title>Bootstrap Wizard by Creative Tim</title>
+
+	<!-- Canonical SEO -->
+    <link rel="canonical" href="https://www.creative-tim.com/product/bootstrap-wizard"/>
+
+    <meta name="keywords" content="wizard, bootstrap wizard, creative tim, long forms, 3 step wizard, sign up wizard, beautful wizard, long forms wizard, wizad with validation">
+    <meta name="description" content="Fully responsive wizard that comes with 3 useful examples and 5 bright colors. The Bootstrap Wizard is one of the most handy elements that can be used inside a project.">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Bootstrap Wizard by Creative Tim">
+    <meta itemprop="description" content="Fully responsive wizard that comes with 3 useful examples and 5 bright colors. The Bootstrap Wizard is one of the most handy elements that can be used inside a project.">
+    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/22/opt_wizard_thumbnail.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@creativetim">
+    <meta name="twitter:title" content="Bootstrap Wizard by Creative Tim">
+    <meta name="twitter:description" content="Fully responsive wizard that comes with 3 useful examples and 5 bright colors. The Bootstrap Wizard is one of the most handy elements that can be used inside a project.">
+    <meta name="twitter:creator" content="@creativetim">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/22/opt_wizard_thumbnail.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Bootstrap Wizard by Creative Tim" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demos.creative-tim.com/wizard-demo-register" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/22/opt_wizard_thumbnail.jpg" />
+    <meta property="og:description" content="Fully responsive wizard that comes with 3 useful examples and 5 bright colors. The Bootstrap Wizard is one of the most handy elements that can be used inside a project." />
+    <meta property="og:site_name" content="Creative Tim" />
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-	<!--     Fonts and icons     -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-
-	<!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+	<link href="assets/css/gsdk-base.css" rel="stylesheet" />
+    <link href="assets/css/demo.css" rel="stylesheet" />
 
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
 </head>
 
 <body>
 <div class="image-container set-full-height" style="background-image: url('assets/img/wizard.jpg')">
     <!--   Creative Tim Branding   -->
-    <a href="http://creative-tim.com">
+    <a href="https://creative-tim.com">
          <div class="logo-container">
             <div class="logo">
                 <img src="assets/img/new_logo.png">
@@ -35,12 +59,6 @@
         </div>
     </a>
 
-	<!--  Made With Get Shit Done Kit  -->
-		<a href="http://demos.creative-tim.com/get-shit-done/index.html?ref=get-shit-done-bootstrap-wizard" class="made-with-mk">
-			<div class="brand">GK</div>
-			<div class="made-with">Made with <strong>GSDK</strong></div>
-		</a>
-
     <!--   Big container   -->
     <div class="container">
         <div class="row">
@@ -49,9 +67,9 @@
             <!--      Wizard container        -->
             <div class="wizard-container">
 
-                <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                <div class="card wizard-card ct-wizard-orange" id="wizard">
                     <form action="" method="">
-                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+                <!--        You can switch "ct-wizard-orange"  with one of the next bright colors: "ct-wizard-blue", "ct-wizard-green", "ct-wizard-orange", "ct-wizard-red"             -->
 
                     	<div class="wizard-header">
                         	<h3>
@@ -59,16 +77,11 @@
                         	   <small>This information will let us know more about you.</small>
                         	</h3>
                     	</div>
-
-						<div class="wizard-navigation">
-							<ul>
-	                            <li><a href="#about" data-toggle="tab">About</a></li>
-	                            <li><a href="#account" data-toggle="tab">Account</a></li>
-	                            <li><a href="#address" data-toggle="tab">Address</a></li>
-	                        </ul>
-
-						</div>
-
+                    	<ul>
+                            <li><a href="#about" data-toggle="tab">About</a></li>
+                            <li><a href="#account" data-toggle="tab">Account</a></li>
+                            <li><a href="#address" data-toggle="tab">Address</a></li>
+                        </ul>
                         <div class="tab-content">
                             <div class="tab-pane" id="about">
                               <div class="row">
@@ -101,13 +114,12 @@
                               </div>
                             </div>
                             <div class="tab-pane" id="account">
-                                <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                                <h4 class="info-text"> What are you doing? </h4>
                                 <div class="row">
-
                                     <div class="col-sm-10 col-sm-offset-1">
                                         <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Design">
+                                            <div class="choice" data-toggle="wizard-radio">
+                                                <input type="radio" name="job" value="Design">
                                                 <div class="icon">
                                                     <i class="fa fa-pencil"></i>
                                                 </div>
@@ -115,8 +127,8 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Code">
+                                            <div class="choice" data-toggle="wizard-radio">
+                                                <input type="radio" name="job" value="Code">
                                                 <div class="icon">
                                                     <i class="fa fa-terminal"></i>
                                                 </div>
@@ -125,8 +137,8 @@
 
                                         </div>
                                         <div class="col-sm-4">
-                                            <div class="choice" data-toggle="wizard-checkbox">
-                                                <input type="checkbox" name="jobb" value="Develop">
+                                            <div class="choice"  data-toggle="wizard-radio">
+                                                <input type="radio" name="job" value="Develop">
                                                 <div class="icon">
                                                     <i class="fa fa-laptop"></i>
                                                 </div>
@@ -135,7 +147,6 @@
 
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="tab-pane" id="address">
@@ -145,7 +156,7 @@
                                     </div>
                                     <div class="col-sm-7 col-sm-offset-1">
                                          <div class="form-group">
-                                            <label>Street Name</label>
+                                            <labe>Street Name</label>
                                             <input type="text" class="form-control" placeholder="5h Avenue">
                                           </div>
                                     </div>
@@ -180,45 +191,94 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="wizard-footer height-wizard">
-                            <div class="pull-right">
-                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
-                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+                        <div class="wizard-footer">
+                            	<div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
 
-                            </div>
-
-                            <div class="pull-left">
-                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
-                            </div>
-                            <div class="clearfix"></div>
+                                </div>
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                                </div>
+                                <div class="clearfix"></div>
                         </div>
-
                     </form>
                 </div>
+
             </div> <!-- wizard container -->
         </div>
         </div><!-- end row -->
     </div> <!--  big container -->
 
-    <div class="footer">
-        <div class="container">
-             Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/bootstrap-wizard">here.</a>
-        </div>
+     <div class="footer">
+      <div class="container">
+             Made with <i class="fa fa-heart heart"></i> by <a href="https://www.creative-tim.com">Creative Tim</a>. Free download <a href="https://www.creative-tim.com/product/bootstrap-wizard">here.</a>
+      </div>
     </div>
+
+    <div class="fixed-plugin">
+        <div class="dropdown open">
+          <a href="#" data-toggle="dropdown">
+            <i class="fa fa-cog fa-2x"> </i>
+          </a>
+          <ul class="dropdown-menu">
+           <li class="active">
+                <a href="index.html">
+                   <img src="assets/img/thumb_register.png">
+                   Register user flow
+                </a>
+            </li>
+            <li>
+                <a href="wizard-list-boat.html">
+                   <img src="assets/img/thumb_list_boat.png">
+                   List your boat
+                </a>
+            </li>
+            <li>
+                <a href="wizard-list-place.html">
+                   <img src="assets/img/thumb_list_place.png">
+                   List your place
+                </a>
+            </li>
+           <li>
+                <a href="wizard-tutorial.html" target="_blank" class="btn btn-default btn-fill">How to use</a>
+            </li>
+            <li class="license">
+                Personal License
+            </li>
+            <li>
+                <a href="https://www.creative-tim.com/product/bootstrap-wizard" target="_blank" class="btn btn-info btn-fill">Download, it's free!</a>
+            </li>
+          </ul>
+        </div>
+     </div>
+
 
 </div>
 
 </body>
 
-	<!--   Core JS Files   -->
-	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--   plugins 	 -->
 	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Wizard -->
-	<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
-
-	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->
 	<script src="assets/js/jquery.validate.min.js"></script>
+
+	<script src="assets/js/wizard.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46172202-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 
 </html>
