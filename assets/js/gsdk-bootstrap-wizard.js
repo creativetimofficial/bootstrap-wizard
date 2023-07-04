@@ -188,9 +188,11 @@ function refreshAnimation($wizard, index){
         child_node = navigation.find('li').eq(index);
         position = child_node.position();
     
-        $wizard.find('.moving-tab').css('width', child_node.width() + 'px');
+        $wizard.find('.moving-tab').css({
+            'width': child_node.width() + 'px',
+            'height': child_node.height()
+        });
         $('.moving-tab').css({
-            'height': child_node.height(),
             'transform': 'translate3d(' + position.left + 'px, ' + position.top + 'px, 0)',
             'transition': 'all 0.3s ease-out'
         });
