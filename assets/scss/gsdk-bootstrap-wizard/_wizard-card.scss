@@ -159,3 +159,12 @@
         font-size: 14px;
     }
 }
+
+.wizard-card-flex {
+
+    .moving-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

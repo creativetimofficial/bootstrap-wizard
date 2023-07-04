@@ -393,6 +393,11 @@ h1 .subtitle {
   color: #999999;
   font-size: 14px;
 }
+.wizard-card-flex .moving-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*             Inputs               */
 .form-control {
@@ -724,7 +729,7 @@ h1 .subtitle {
   background-color: inherit;
 }
 
-.wizard-navigation-flex .nav-pills {
+.wizard-card-flex .nav-pills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,12 +741,15 @@ h1 .subtitle {
       -ms-flex-align: stretch;
           align-items: stretch;
 }
-.wizard-navigation-flex .nav-pills > li {
+.wizard-card-flex .nav-pills > li {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 fit-content;
           flex: 1 0 fit-content;
   display: table;
   float: none;
+}
+.wizard-card-flex .nav-pills > li > a {
+  word-break: break-all;
 }
 
 .text-primary, .text-primary:hover {

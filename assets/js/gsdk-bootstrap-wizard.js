@@ -183,15 +183,29 @@ $(window).resize(function(){
 });
 
 function refreshAnimation($wizard, index){
-    child_node = $wizard.find('li').eq(index);
-    position = child_node.position();
+    navigation = $wizard.find('.wizard-navigation');
+    if($wizard.hasClass('wizard-card-flex')){
+        child_node = navigation.find('li').eq(index);
+        position = child_node.position();
+    
+        $wizard.find('.moving-tab').css('width', child_node.width() + 'px');
+        $('.moving-tab').css({
+            'height': child_node.height(),
+            'transform': 'translate3d(' + position.left + 'px, ' + position.top + 'px, 0)',
+            'transition': 'all 0.3s ease-out'
+        });
+    } else {
+        total_steps = navigation.find('li').length;
+        move_distance = navigation.width() / total_steps;
+        step_width = move_distance;
+        move_distance *= index;
 
-    $wizard.find('.moving-tab').css('width', child_node.width() + 'px');
-    $('.moving-tab').css({
-        'height': child_node.height(),
-        'transform': 'translate3d(' + position.left + 'px, ' + position.top + 'px, 0)',
-        'transition': 'all 0.3s ease-out'
-    });
+        $wizard.find('.moving-tab').css('width', step_width);
+        $('.moving-tab').css({
+            'transform':'translate3d(' + move_distance + 'px, 0, 0)',
+            'transition': 'all 0.3s ease-out'
+        });
+    }
 }
 
 function debounce(func, wait, immediate) {

@@ -32,7 +32,7 @@
 
 }
 
-.wizard-navigation-flex {
+.wizard-card-flex {
     
     .nav-pills {
         display: -webkit-box;
@@ -52,6 +52,10 @@
                     flex: 1 0 fit-content;
             display: table;
             float: none;
+
+            > a {
+                word-break: break-all;
+            }
         }
     }
 }
